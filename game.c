@@ -15,7 +15,13 @@
 
 //place function prototypes here
 
+
 void folksamEV(void);
+
+void ip21(void);
+
+void rtFun(void);
+
 void JLeyva(void);
 
 void fish(void);
@@ -25,6 +31,7 @@ void printStudent30(void);
 void printInitialsAjewett(void);
 
 void jgFun(void);
+
 
 
 
@@ -154,6 +161,7 @@ int main(int argc, char *argv[])
 			}
 			case 21:
 			{
+				ip21();
 				puts("room21");
 				break;
 			}
@@ -332,6 +340,7 @@ int main(int argc, char *argv[])
                         }
 			case 57:
                         {
+				rtFun();
                                 puts("room57");
                                 break;
                         }
@@ -444,6 +453,17 @@ int main(int argc, char *argv[])
 void folksamEV(void) 
 {
 	printf("EV\n");
+}
+
+void ip21(void)
+{
+	printf("IP\n");
+}
+
+void rtFun(void)
+{
+	printf("RT");
+}
 
 void JLeyva(void)
 {
@@ -464,6 +484,7 @@ void printInitialsAjewett(void)
 {
 	printf("AJ\n");
 }
+
 void jgFun(void)
 {
 	printf("JGB");	
