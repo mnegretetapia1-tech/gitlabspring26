@@ -15,7 +15,7 @@
 
 //place function prototypes here
 
-
+void fish(void);
 
 
 
@@ -84,6 +84,7 @@ int main(int argc, char *argv[])
 			}
 			case 10:
 			{
+				fish();
 				puts("room10");
 				break;
 			}
@@ -423,3 +424,9 @@ int main(int argc, char *argv[])
 }
 
 //place functions here
+void fish(void) 
+{
+
+	printf("JF");
+
+}
