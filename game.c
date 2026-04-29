@@ -14,10 +14,13 @@
 #include <unistd.h>
 
 //place function prototypes here
-
+void abFun(void);
 
 
 void function13AG(void);
+
+
+void theSigmaMethod(void);
 
 
 void jbInit(void);
@@ -39,12 +42,13 @@ void printStudent30(void);
 
 void printInitialsAjewett(void);
 
+
 void jgFun(void);
 
 
 
 
-
+void brooklynstitt(void);
 
 
 
@@ -205,6 +209,7 @@ int main(int argc, char *argv[])
 			case 27:
 			{
 				puts("room27");
+        theSigmaMethod();
 				break;
 			}
 			case 28:
@@ -213,7 +218,8 @@ int main(int argc, char *argv[])
 				break;
 			}
 			case 29:
-			{
+			{	
+				abFun();
 				puts("room29");
 				break;
 			}
@@ -292,6 +298,7 @@ int main(int argc, char *argv[])
 			case 45:
 			{
 				puts("room45");
+				brooklynstitt();
 				break;
 			}
 			case 46:
@@ -463,9 +470,22 @@ int main(int argc, char *argv[])
 
 //place functions here
 
+
 void function13AG(void)
 {
 	printf("AG\n");
+}
+void abFun(void)
+{
+	printf("AB");
+}
+
+
+
+void theSigmaMethod(void)
+{
+  printf("J.Q.\n");
+
 }
 
 void folksamEV(void) 
@@ -476,6 +496,12 @@ void folksamEV(void)
 void jbInit()
 {
 	puts("jbRoom17");
+}
+
+// Case 45:
+void brooklynstitt(void)
+{
+	printf("Initials: BAS\n\n");
 }
 
 void ip21(void)
@@ -496,6 +522,7 @@ void JLeyva(void)
 void fish(void) 
 {
 	printf("JF");
+
 }
 
 void printStudent30(void)
@@ -503,6 +530,7 @@ void printStudent30(void)
 	printf("Student initials CP\n");
 	return;
 }
+
 void printInitialsAjewett(void)
 {
 	printf("AJ\n");
