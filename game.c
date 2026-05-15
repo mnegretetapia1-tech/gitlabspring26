@@ -1185,8 +1185,88 @@ typedef struct
 
 
 void afFun(void)
-{ 
-	puts("AFroom52");
+{
+    printf("\n room 52: The crypt of the lost bananas of the curator\n");
+
+    printf("\n\"welcome to my crypt, you will have to go through banana related test to get my reward.\"\n");
+    printf("you are dropped down a hole into the crypt\n");
+
+    int Answers[5] = {2, 2, 1, 3, 5}; // array
+    int decision;
+    int start = rand() % 5; // random number
+    int i;
+    int q;
+
+    for(i = 0; i < 5; i++) // loop
+    {
+        q = (start + i) % 5;
+
+        switch(q)
+        {
+            case 0:
+                printf("\nYou find five bananas on an altar. Only one is safe to touch.\n");
+                printf("1) Green banana\n");
+                printf("2) yellow banana\n");
+                printf("3) Black banana\n");
+                printf("4) Moldy banana\n");
+                printf("5) Glowing red banana\n");
+                break;
+
+            case 1:
+                printf("\nA giant stone door blocks your path.\n");
+                printf("1) Kick the door open with all you might\n");
+                printf("2) Press the yellow banana symbol\n");
+                printf("3) Scream at the door\n");
+                printf("4) Run away\n");
+                printf("5) Sleep on the floor\n");
+                break;
+
+            case 2:
+                printf("\nThe curator appears and demands respect.\n");
+                printf("1) Bow and offer a banana\n");
+                printf("2) Throw a peel at him\n");
+                printf("3) call him mojo jojo\n");
+                printf("4) Challenge to a banana eating competition\n");
+                printf("5) make fun of his mom\n");
+                break;
+
+            case 3:
+                printf("\nA pit opens below you. Five vines hang overhead.\n");
+                printf("1) Grab the red vine\n");
+                printf("2) Grab the blue vine\n");
+                printf("3) Grab the yellow vine\n");
+                printf("4) Jump into the pit where the glortrox is ready to eat you\n");
+                printf("5) Stand still and do nothing\n");
+                break;
+
+            case 4:
+                printf("\nYou reach the treasure chamber with five chests.\n");
+                printf("1) Open the rusty chest\n");
+                printf("2) Open the tiny chest\n");
+                printf("3) Open the cracked chest\n");
+                printf("4) Open the loud chest\n");
+                printf("5) Open the banana-shaped chest\n");
+                break;
+        }
+
+        printf("\nYour choice (1-5): ");
+        scanf("%d", &decision);
+
+        if(decision == Answers[q])
+        {
+            printf("\nCorrect!\n");
+        }
+        else
+        {
+            printf("\nWrong... no banana for you.\n");
+            printf("Returning to main room...\n\n");
+            return;
+        }
+    }
+
+    printf("\nYou survived Room 52 and pleased the curator!\n");
+    printf("He rewards you with a GOLDEN BANANA!!!\n");
+    printf("Returning to main room...\n\n");
 }
 
 void jkFun(void)
